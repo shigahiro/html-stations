@@ -1,0 +1,82 @@
+header {
+  background-color: #ffffff;
+  width: auto;
+  height: auto;
+}
+
+body {
+  background-color: #c4c4c4;
+}
+
+footer {
+  background-color: #ffffff;
+  width: auto;
+  height: auto;
+}
+
+.box {
+  /* グリッドレイアウトを使用 */
+  display: grid;
+  /* 1列のレイアウト（モバイル用） */
+  grid-template-columns: repeat(3, 1fr);
+  /* グリッドアイテム間の隙間を16pxに */
+  gap: 16px;
+  /* .box自体の内側余白を16pxに */
+  padding: 16px;
+  /* 最大幅を1200pxに制限 */
+  max-width: 1200px;
+  /* 左右のマージンを自動で中央配置に */
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 20px;
+}
+
+.card__title {
+  color: #282828;
+  font-size: 14px;
+}
+
+.card__description {
+  color: #282828;
+  font-size: 12px;
+}
+
+.card__img-top {
+  width: 288px;
+  height: 182px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card__title {
+    font-size: 10px;
+  }
+  .card__description {
+    font-size: 8px;
+  }
+  .box {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* グリッドを3列に変更（各列均等幅） */
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .card__title {
+    font-size: 8px;
+  }
+  .card__description {
+    font-size: 0px;
+  }
+  .box {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* グリッドを3列に変更（各列均等幅） */
+  }
+}
