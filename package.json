@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.36.1",
+    "@playwright/test": "^1.57.0",
     "fp-ts": "^2.16.0",
     "lite-server": "^2.6.1",
     "prettier": "^3.0.0",
